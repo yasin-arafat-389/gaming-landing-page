@@ -212,6 +212,97 @@
   width: 100%;
 }
 
+/* Gamer styles */
+
+.gamer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+
+.gamer-image img {
+  width: 100%;
+}
+
+.gamer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.gamer-container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  padding: 60px 0px;
+}
+
+.gamer-title {
+  text-align: right;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gamer-sub-title {
+  color: #534c64;
+  text-align: right;
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  margin-top: 15px;
+  width: 85%;
+  margin: 15 auto 0px;
+}
+
+.game-button {
+  padding: 14px 25px;
+  border-radius: 48px;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.purpose {
+  color: #534c64;
+  text-align: right;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  margin-top: 15px;
+}
+
+.purpose span {
+  color: #534c64;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
 /* Mobile breakpoint */
 
 @media only screen and (max-width: 576px) {
@@ -301,6 +392,32 @@
   .buttons {
     text-align: center;
   }
+
+  .gamer-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px 0px;
+  }
+
+  .gamer-content {
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .gamer-sub-title {
+    text-align: center;
+  }
+
+  .purpose {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.2rem;
+  }
+
+  .purpose span {
+    font-size: 1.3rem;
+  }
 }
 
 /* Tablet breakpoint */
@@ -352,5 +469,28 @@
 
   .fancy-text {
     font-size: 3.9rem;
+  }
+
+  .gamer-container {
+    width: 90%;
+    display: flex;
+  }
+
+  .gamer-content {
+    width: 80%;
+    align-items: center;
+  }
+
+  .gamer-title {
+    font-size: 1.3rem;
+  }
+
+  .purpose {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .purpose span {
+    font-size: 1rem;
   }
 }
