@@ -541,6 +541,56 @@
   margin-top: 15px;
 }
 
+.category {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  height: 300px;
+  margin-top: 140px;
+}
+
+.category-container {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(5, auto);
+}
+
+.category-design {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 50px;
+  padding: 10px 0px;
+}
+
+.category-design img {
+  width: 50px;
+}
+
+.category-design p {
+  color: #0b0223;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.category-design:hover {
+  border: 2px solid #ff42a5;
+  cursor: pointer;
+}
+.category-design:hover .game-title {
+  color: #ff42a5;
+}
+
 /* Mobile breakpoint */
 
 @media only screen and (max-width: 576px) {
@@ -674,6 +724,65 @@
     flex-direction: column;
     gap: 80px;
   }
+
+  .play {
+    padding-top: 30px;
+  }
+
+  .play-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .play-title {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  .play-sub-title {
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .play-images {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .big-img {
+    width: 80%;
+  }
+
+  .small-img {
+    width: 33%;
+    left: 120px;
+    top: -88px;
+  }
+
+  .category {
+    margin-top: 0px;
+  }
+
+  .category-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+  }
+
+  .category-design img {
+    width: 40px;
+  }
+
+  .category-design p {
+    font-size: 9px;
+  }
 }
 
 /* Tablet breakpoint */
@@ -753,5 +862,29 @@
   .videos {
     grid-template-columns: repeat(2, 1fr);
     gap: 75px;
+  }
+
+  .play {
+    padding-top: 70px;
+  }
+
+  .play-container {
+    width: 90%;
+  }
+
+  .small-img {
+    right: 70px;
+    top: 35px;
+  }
+
+  .play-title {
+    width: 72%;
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  .category-container {
+    width: 90%;
+    grid-template-columns: repeat(3, auto);
   }
 }
