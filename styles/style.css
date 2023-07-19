@@ -359,6 +359,7 @@
   width: 100%;
   height: 350px;
   background-image: url("../images/Rectangle-4.png");
+  border: 4px solid transparent;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -367,6 +368,7 @@
   width: 100%;
   height: 350px;
   background-image: url("../images/Rectangle-5.png");
+  border: 4px solid transparent;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -375,6 +377,7 @@
   width: 100%;
   height: 350px;
   background-image: url("../images/Rectangle-7a.png");
+  border: 4px solid transparent;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -383,6 +386,7 @@
   width: 100%;
   height: 350px;
   background-image: url("../images/Rectangle-6.png");
+  border: 4px solid transparent;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -459,7 +463,7 @@
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("../images/Rectangle-7.png");
+    url("../images/Rectangle-7a.png");
   border: 4px solid #ff42a5;
 }
 
@@ -569,6 +573,8 @@
   align-items: center;
   border-radius: 50px;
   padding: 10px 0px;
+  border: 2px solid transparent;
+  transition: border 0.5s ease-out;
 }
 
 .category-design img {
